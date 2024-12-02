@@ -25,6 +25,8 @@ dependencies {
 }
 ```
 
+Where `0.0.1` is needed to you version of this library
+
 - Add your GitHub user login and token in local gradle.properties file
 
 ```properties
