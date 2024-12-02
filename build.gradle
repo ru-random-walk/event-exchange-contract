@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'ru.random.walk'
-version = '1.0.0'
+version = '1.0.1'
 
 repositories {
     mavenCentral()
@@ -26,4 +26,8 @@ publishing {
             }
         }
     }
+}
+
+javadoc {
+    destinationDir = file("${buildDir}/docs/javadoc")
 }
