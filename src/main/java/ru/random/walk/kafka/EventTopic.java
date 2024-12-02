@@ -1,5 +1,8 @@
 package ru.random.walk.kafka;
 
-public enum EventTopic {
-    CREATE_CHAT
+/**
+ * Topic name must be matches with Pattern: &lt;event&gt;.&lt;entity&gt;
+ */
+public class EventTopic {
+    public static final String CREATE_CHAT = "create.chat";
 }
