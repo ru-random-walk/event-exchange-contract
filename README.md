@@ -33,3 +33,16 @@ Where `0.0.1` is needed to you version of this library
 user=YourGithubLogin
 token=YourGithubToken
 ```
+
+- Also add env vars in GitHub Actions workflow for build project step:
+
+```
+- name: Build Project
+run: |
+  chmod +x gradlew
+  ./gradlew clean
+  ./gradlew build
+env:
+  GITHUB_ACTOR: ${{ github.actor }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
