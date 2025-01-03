@@ -11,6 +11,11 @@ public class EventTopic {
     public static final String CREATE_CHAT = "create.chat";
 
     /**
+     * The Kafka topic with information about new random-walk user.
+     */
+    public static final String USER_REGISTRATION = "registration.user";
+
+    /**
      * Default private constructor
      */
     private EventTopic(){
