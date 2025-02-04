@@ -1,17 +1,17 @@
-package ru.random.walk.kafka;
+package ru.random.walk.topic;
 
 /**
- * Class representing Kafka event topics.
+ * Class representing event topics.
  * Topic name must be matches with Pattern: &lt;event&gt;.&lt;entity&gt;
  */
 public class EventTopic {
     /**
-     * The Kafka topic for creating a private chat.
+     * The topic for creating a private chat.
      */
     public static final String CREATE_CHAT = "create.chat";
 
     /**
-     * The Kafka topic with information about new random-walk user.
+     * The topic with information about new random-walk user.
      */
     public static final String USER_REGISTRATION = "registration.user";
 
