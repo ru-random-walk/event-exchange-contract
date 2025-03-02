@@ -16,8 +16,13 @@ public class EventTopic {
     public static final String USER_REGISTRATION = "registration.user";
 
     /**
+     * The topic with joining user to club
+     */
+    public static final String USER_JOIN = "join.user";
+
+    /**
      * Default private constructor
      */
-    private EventTopic(){
+    private EventTopic() {
     }
 }
