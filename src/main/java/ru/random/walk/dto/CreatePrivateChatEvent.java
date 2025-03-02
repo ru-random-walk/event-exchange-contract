@@ -1,5 +1,7 @@
 package ru.random.walk.dto;
 
+import lombok.Builder;
+
 import java.util.UUID;
 
 /**
@@ -10,6 +12,7 @@ import java.util.UUID;
  * @param chatMember1 The UUID of the first chat member.
  * @param chatMember2 The UUID of the second chat member.
  */
+@Builder
 public record CreatePrivateChatEvent(
         UUID chatMember1,
         UUID chatMember2

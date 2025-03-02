@@ -1,5 +1,7 @@
 package ru.random.walk.dto;
 
+import lombok.Builder;
+
 import java.util.UUID;
 
 /**
@@ -10,6 +12,7 @@ import java.util.UUID;
  * @param userId id of user
  * @param clubId id of club
  */
+@Builder
 public record UserJoinEvent(
         UUID userId,
         UUID clubId
