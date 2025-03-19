@@ -20,6 +20,10 @@ public class EventTopic {
      */
     public static final String USER_JOIN = "join.user";
 
+    public static final String ADD_DEVICE = "add.device";
+
+    public static final String SEND_NOTIFICATION = "send.notification";
+
     /**
      * Default private constructor
      */
