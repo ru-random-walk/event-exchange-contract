@@ -14,6 +14,7 @@ import java.util.UUID;
  * @param userId    user to send notification
  * @param body      notification body
  * @param title     notification title
+ * @param additionalData additional data to attach to notification
  */
 @Builder
 public record SendNotificationEvent(
