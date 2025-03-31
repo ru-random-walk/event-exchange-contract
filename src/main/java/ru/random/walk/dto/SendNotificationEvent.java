@@ -21,7 +21,7 @@ public record SendNotificationEvent(
         UUID userId,
         String title,
         String body,
-        Map<String, Object> additionalData
+        Map<String, String> additionalData
 ) {
 
     public SendNotificationEvent(UUID userId, String title, String body) {
