@@ -20,6 +20,11 @@ public class EventTopic {
      */
     public static final String USER_JOIN = "join.user";
 
+    /**
+     * The topic with excluding user from club
+     */
+    public static final String USER_EXCLUDE = "exclude.user";
+
     public static final String ADD_DEVICE = "add.device";
 
     public static final String SEND_NOTIFICATION = "send.notification";
