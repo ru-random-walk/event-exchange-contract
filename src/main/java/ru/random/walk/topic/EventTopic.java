@@ -32,6 +32,8 @@ public class EventTopic {
      */
     public static final String SEND_NOTIFICATION = "send.notification";
 
+    public static final String SEND_EMAIL = "send.email";
+
     /**
      * The topic with information about approved or declined requested appointments
      */
