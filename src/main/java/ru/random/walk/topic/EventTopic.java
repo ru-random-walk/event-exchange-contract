@@ -27,7 +27,15 @@ public class EventTopic {
 
     public static final String ADD_DEVICE = "add.device";
 
+    /**
+     * Topic to send push-notification on user's device
+     */
     public static final String SEND_NOTIFICATION = "send.notification";
+
+    /**
+     * The topic with information about approved or declined requested appointments
+     */
+    public static final String REQUESTED_APPOINTMENT_STATE = "get.requested.appointment.state";
 
     /**
      * Default private constructor
