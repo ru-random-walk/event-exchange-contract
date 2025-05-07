@@ -12,6 +12,7 @@ on:
   push:
     branches:
       - master
+      - RANDOMWALK-96-add-public-repository-pushing-library
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -30,4 +31,7 @@ jobs:
       - name: Build and Publish package (with doc)
         run: ./gradlew javadoc && ./gradlew build && ./gradlew publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+          SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
