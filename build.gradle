@@ -55,8 +55,8 @@ publishing {
             name = "Sonatype"
             url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
             credentials {
-                username = project.findProperty("ossrhUsername") ?: System.getenv("OSSRH_USERNAME")
-                password = project.findProperty("ossrhPassword") ?: System.getenv("OSSRH_PASSWORD")
+                username = project.findProperty("ossrhUsername") ?: System.getenv("SONATYPE_USERNAME")
+                password = project.findProperty("ossrhPassword") ?: System.getenv("SONATYPE_PASSWORD")
             }
         }
     }
@@ -64,6 +64,10 @@ publishing {
 
 signing {
     sign publishing.publications.mavenJava
+    useInMemoryPgpKeys(
+            project.findProperty("signingKey") ?: System.getenv("SIGNING_KEY"),
+            project.findProperty("signingPassword") ?: System.getenv("SIGNING_PASSWORD")
+    )
 }
 
 javadoc {
