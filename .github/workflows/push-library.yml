@@ -12,6 +12,7 @@ on:
   push:
     branches:
       - master
+      - RANDOMWALK-96-add-public-repository-pushing-library
 jobs:
   publish:
     runs-on: ubuntu-latest
